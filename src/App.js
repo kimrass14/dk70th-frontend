@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar'
 import Homepage from './Components/Homepage/Homepage'
 import BirthdayWishes from './Components/BirthdayWishes'
 import Memories from './Components/Memories'
+import './App.css'
 
 function App() {
   return (

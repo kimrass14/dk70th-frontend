@@ -9,7 +9,9 @@ const Homepage = () => {
         <>
             <div className="homepage">
                 <img src={diane} alt="pic" />
-                <div className="name">Diane Kosuda</div>
+                <div className="gradient">
+                    <h1>Diane Kosuda</h1>
+                </div>
             </div>
         </>
     )
