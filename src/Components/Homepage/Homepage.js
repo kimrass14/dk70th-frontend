@@ -10,7 +10,10 @@ const Homepage = () => {
             <div className="homepage">
                 <img src={diane} alt="pic" />
                 <div className="gradient">
-                    <h1>Diane Kosuda</h1>
+                    <h1>Happy 70th Birthday</h1>
+                    <div className="btn-container">
+                        <button><Link to="/memories">Next</Link></button>
+                    </div>
                 </div>
             </div>
         </>

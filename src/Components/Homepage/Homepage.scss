@@ -16,6 +16,7 @@
         height: 100%;
         position: absolute;
         top: 0;
+        text-align: center;
 
         h1 {
             color: white;
@@ -24,6 +25,15 @@
             float: right;
             margin: 0;
             @include centerInDiv()
+        }
+        .btn-container {
+            width: 100%;
+            position: absolute;
+            bottom: 50px;
+        }
+        button {
+            position: absolute;
+            bottom: 0;
         }
     }
 }
