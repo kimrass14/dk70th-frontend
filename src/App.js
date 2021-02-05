@@ -3,8 +3,9 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 import Header from './Components/Header/Header'
 import NavBar from './Components/NavBar/NavBar'
 import Homepage from './Components/Homepage/Homepage'
-import BirthdayWishes from './Components/BirthdayWishes'
+import BirthdayWishes from './Components/BirthdayWishes/BirthdayWishes'
 import Memories from './Components/Memories/Memories'
+import Appreciations from './Components/Appreciations/Appreciations'
 import './App.scss'
 
 function App() {
@@ -31,11 +32,22 @@ function App() {
       <Header />
       <br/>
       <Route path="/" exact component={Homepage} />
-      <Route path="/birthdaywishes" component={BirthdayWishes} />
+      <Route path="/birthdaywishes">
+        <div className="page">
+          <NavBar />
+          <BirthdayWishes messages={messages}/>
+        </div>
+      </Route>
       <Route path="/memories">
-        <div className="memories-div">
+        <div className="page">
           <NavBar />
           <Memories messages={messages}/>
+        </div>
+      </Route>
+      <Route path="/appreciations">
+        <div className="page">
+          <NavBar />
+          <Appreciations messages={messages}/>
         </div>
       </Route>
     </Router>

@@ -3,11 +3,11 @@ import './Memories.scss'
 
 const Memories = (props) => {
 
-    const [memories, setMemories] = useState()
+    const entries = props.messages.feed.entry
         
-    let entry = ''
-    if(props.messages.feed.entry[0]) {
-        entry = props.messages.feed.entry.filter(message => {return message.gsx$type.$t === "Favorite memory"})
+    let message = ''
+    if(entries[0]) {
+        message = entries.filter(message => {return message.gsx$type.$t === "Favorite memory"})
         .map((element, index) => {
             return(
                 <div className="tile memory" key={index}>
@@ -22,10 +22,10 @@ const Memories = (props) => {
     const loading = "loading"
 
     return(
-        <>
+        <div className="memories section">
             <div className="memories">Memories</div>
-            {entry}
-        </>
+            {message}
+        </div>
     )
 }
 export default Memories
