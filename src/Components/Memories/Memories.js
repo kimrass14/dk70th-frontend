@@ -11,8 +11,8 @@ const Memories = (props) => {
         .map((element, index) => {
             return(
                 <div className="tile memory" key={index}>
-                    <div>{element.gsx$name.$t}</div>
-                    <div>{element.gsx$message.$t}</div>
+                    <div className="message">{element.gsx$message.$t}</div>
+                    <div className="name">{element.gsx$name.$t}</div>
                     {element.gsx$picture.$t != "" ? <img src={element.gsx$picture.$t} alt="pic"/> : null}
                 </div>
             )
@@ -23,8 +23,8 @@ const Memories = (props) => {
 
     return(
         <div className="memories section">
-            <div className="memories">Memories</div>
-            {message}
+            <h2 className="memories">Memories</h2>
+            <div className="tile-container">{message}</div>
         </div>
     )
 }

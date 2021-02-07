@@ -1,8 +1,4 @@
-@mixin centerInDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@import '../../style';
 
 .homepage {
     position: relative;

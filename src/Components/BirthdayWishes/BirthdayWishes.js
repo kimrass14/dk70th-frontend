@@ -10,8 +10,8 @@ const BirthdayWishes = (props) => {
             .map((element, index) => {
                 return(
                     <div className="tile wish" key={index}>
-                        <div>{element.gsx$message.$t}</div>
-                        <div>{element.gsx$name.$t}</div>
+                        <div className="message">{element.gsx$message.$t}</div>
+                        <div className="name">{element.gsx$name.$t}</div>
                         {element.gsx$picture.$t != "" ? <img src={element.gsx$picture.$t} alt="pic"/> : null}
                     </div>
                 )
@@ -20,8 +20,8 @@ const BirthdayWishes = (props) => {
 
     return(
         <div className="wishes section">
-            <div>BirthdayWishes</div>
-            {message}        
+            <h2>BirthdayWishes</h2>
+            <div className="tile-container">{message}</div>        
         </div>
     )
 }

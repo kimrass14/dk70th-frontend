@@ -5,8 +5,8 @@ import './NavBar.scss'
 const NavBar = () => {
 
     return(
-        <div className="navbar">
-            <Link to="/" className="link">Home</Link>
+        <div className="navbar section">
+            <Link to="/foryou" className="link">For You</Link>
             <Link to="/birthdaywishes" className="link">Birthday Wishes</Link>
             <Link to="/memories" className="link">Memories</Link>
             <Link to="/appreciations" className="link">Appreciations</Link>

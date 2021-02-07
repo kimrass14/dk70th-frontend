@@ -1,0 +1,35 @@
+//variables
+$red: red;
+$section-width: 80%;
+
+//mixins
+@mixin centerInDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    margin-top: 50px;
+    display: flex;
+}
+.section {
+    padding: 15px;
+}
+.tile {
+    width: 30%;
+    border: solid blue;
+    padding: 10px;
+    margin: 10px;
+
+    .message {
+        margin-bottom: 10px;
+    }
+
+    img {
+        margin-top: 10px;
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+}

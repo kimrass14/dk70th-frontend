@@ -6,15 +6,15 @@ import Homepage from './Components/Homepage/Homepage'
 import BirthdayWishes from './Components/BirthdayWishes/BirthdayWishes'
 import Memories from './Components/Memories/Memories'
 import Appreciations from './Components/Appreciations/Appreciations'
-import './App.scss'
+import ForYou from './Components/ForYou/ForYou'
+// import './App.scss'
+import './_style.scss';
 
 function App() {
 
   const [messages, setMessages] = useState()
 
   const sheetAsJSON = "https://spreadsheets.google.com/feeds/list/1MnxtIevpjVwmqJMElCI43xy86-E6qsw3y4dvZ7o0HHI/1/public/values?alt=json"
-
-  
 
   const getMessages = async () => {
     const response = await fetch(sheetAsJSON)
@@ -30,8 +30,14 @@ function App() {
   return (
     <Router>
       <Header />
-      <br/>
+      {/* <br/> */}
       <Route path="/" exact component={Homepage} />
+      <Route path="/foryou">
+        <div className="page">
+          <NavBar />
+          <ForYou/>
+        </div>
+      </Route>
       <Route path="/birthdaywishes">
         <div className="page">
           <NavBar />

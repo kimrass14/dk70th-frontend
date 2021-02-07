@@ -10,8 +10,8 @@ const Appreciations = (props) => {
             .map((element, index) => {
                 return(
                     <div className="tile" key={index}>
-                        <div>{element.gsx$message.$t}</div>
-                        <div>{element.gsx$name.$t}</div>
+                        <div className="message">{element.gsx$message.$t}</div>
+                        <div className="name">{element.gsx$name.$t}</div>
                         {element.gsx$picture.$t != '' ? <img src={element.gsx$picture.$t} alt="pic"/> : null}
                     </div>
                 )
@@ -20,8 +20,8 @@ const Appreciations = (props) => {
 
     return(
         <div className="appreciations section">
-            <div>Appreciations</div>
-            {appreciate}
+            <h2>Appreciations</h2>
+            <div className="tile-container">{appreciate}</div>
         </div>
     )
 }

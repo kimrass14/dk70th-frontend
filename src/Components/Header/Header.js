@@ -5,7 +5,7 @@ import './Header.scss'
 const Header = () => {
 
     return(
-        <Link to='/' className="headerSection">Diane Kosuda</Link>
+        <header><Link to='/' >Diane Kosuda</Link></header>
     )
 }
 export default Header
