@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
+import Fade from 'react-reveal/Fade'
 import './Memories.scss'
 
 const Memories = (props) => {
@@ -10,11 +11,24 @@ const Memories = (props) => {
         message = entries.filter(message => {return message.gsx$type.$t === "Favorite memory"})
         .map((element, index) => {
             return(
-                <div className="tile memory" key={index}>
-                    <div className="message">{element.gsx$message.$t}</div>
-                    <div className="name">{element.gsx$name.$t}</div>
-                    {element.gsx$picture.$t != "" ? <img src={element.gsx$picture.$t} alt="pic"/> : null}
-                </div>
+                <>
+                        {element.gsx$picture.$t != "" ? 
+                        <Fade right>
+                            <div className="tile-with-pic memory-with-pic" key={index}>
+                                <div className="message-div">
+                                    <p className="message">{element.gsx$message.$t}</p>
+                                    <p className="name">{element.gsx$name.$t}</p>
+                                </div>
+                                <img src={element.gsx$picture.$t} alt="pic"/>
+                            </div>
+                        </Fade> : 
+                        <Fade right>
+                            <div className="tile memory" key={index}>
+                                <div className="message">{element.gsx$message.$t}</div>
+                                <div className="name">{element.gsx$name.$t}</div>
+                            </div>
+                        </Fade>}
+                    </>
             )
         })
     }
