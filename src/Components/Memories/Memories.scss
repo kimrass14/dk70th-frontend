@@ -2,4 +2,11 @@
 
 .memories {
     width: $section-width;
+    h2 {
+        @include sectionTitle($dark-purple);
+    }
+    
+    .memory {
+        @include tileBorder($dark-purple)
+    }
 }

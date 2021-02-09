@@ -2,4 +2,11 @@
 
 .appreciations {
     width: $section-width;
+    h2 {
+        @include sectionTitle($yellow);
+    }
+    
+    .appreciate {
+        @include tileBorder($yellow)
+    }
 }

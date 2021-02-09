@@ -5,12 +5,14 @@ header {
     height: 50px;
     width: 100%;
     display: flex;
-    padding: 0px 15px;
+    padding: 0px 25px;
     position: fixed;
     top: 0;
     z-index: 3;
 
     a {
+        font-family: $nav-font;
+        font-size: 25px;
         align-self: center;
         text-decoration: none;
         color: white;
