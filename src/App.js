@@ -17,10 +17,14 @@ function App() {
   const sheetAsJSON = "https://spreadsheets.google.com/feeds/list/1MnxtIevpjVwmqJMElCI43xy86-E6qsw3y4dvZ7o0HHI/1/public/values?alt=json"
 
   const getMessages = async () => {
-    const response = await fetch(sheetAsJSON)
-    console.log('response', response)
-    const data = await response.json()
-    setMessages(data)
+    try {
+      const response = await fetch(sheetAsJSON)
+      console.log('response', response)
+      const data = await response.json()
+      setMessages(data)
+    } catch (error) {
+      console.log(error)
+    }
   }
   useEffect(() => {
     getMessages()

@@ -2,18 +2,27 @@ import React, {useState} from 'react'
 import './BirthdayWishes.scss'
 
 const BirthdayWishes = (props) => {
-    const entries = props.messages.feed.entry
+    // const entries = props.messages.feed.entry
 
     let message = ''
-    if(entries[0]) {
-        message = entries.filter(message => {return message.gsx$type.$t === "Birthday wishes"})
+    if(props.messages.feed.entry[0]) {
+        message = props.messages.feed.entry.filter(message => {return message.gsx$type.$t === "Birthday wishes"})
             .map((element, index) => {
                 return(
-                    <div className="tile wish" key={index}>
-                        <div className="message">{element.gsx$message.$t}</div>
-                        <div className="name">{element.gsx$name.$t}</div>
-                        {element.gsx$picture.$t != "" ? <img src={element.gsx$picture.$t} alt="pic"/> : null}
-                    </div>
+                    <>
+                        {element.gsx$picture.$t != "" ? 
+                        <div className="tile-with-pic wish" key={index}>
+                            <div className="message-div">
+                                <p className="message">{element.gsx$message.$t}</p>
+                                <p className="name">{element.gsx$name.$t}</p>
+                            </div>
+                            <img src={element.gsx$picture.$t} alt="pic"/>
+                        </div> : 
+                        <div className="tile wish" key={index}>
+                            <div className="message">{element.gsx$message.$t}</div>
+                            <div className="name">{element.gsx$name.$t}</div>
+                        </div>}
+                    </>
                 )
             })
     }
