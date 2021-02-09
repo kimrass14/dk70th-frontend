@@ -1,4 +1,5 @@
 //variables
+$purple: #A4036F;
 $green: #0DB39E;
 $yellow: #F1C453;
 $grey: #EBEBEB;
@@ -13,6 +14,20 @@ $nav-font: 'Lato', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@mixin tileBorder($color) {
+    border: solid white 5px;
+    border-left: solid $color 5px;
+    &:hover {
+        border: solid $color 5px;
+    }
+}
+@mixin sectionTitle($color) {
+    font-size: 30px;
+    font-family: $nav-font;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color;
 }
 
 .page {
@@ -30,14 +45,13 @@ $nav-font: 'Lato', sans-serif;
     grid-auto-flow: dense;
 }
 .tile {
-    // width: 30%;
     background-color: rgba(255, 255, 255, 1);
     padding: 10px;
-    // margin: 10px;
 
     .message {
         margin-bottom: 10px;
         font-family: $message-font;
+        font-weight: 500;
     }
     .name {
         font-family: $name-font;
@@ -49,22 +63,20 @@ $nav-font: 'Lato', sans-serif;
 .tile-with-pic {
     grid-column: span 2;
     display: flex;
-    // max-width: 75%;
     border: solid black;
-    // margin: 10px;
 
     .message-div {
         background-color: black;
         padding: 10px;
         max-width: 60%;
-        // display: grid;
+        font-family: $message-font;
+        font-weight: 500;
 
 
         p {
             margin: 0px;
             text-align: right;
             color: white;
-            // align-self: end;
             font-family: $message-font;
         }
         .name {
@@ -86,6 +98,9 @@ $nav-font: 'Lato', sans-serif;
             width: 300px;
             max-height: 250px;
             object-fit: cover;
+            &:hover {
+                transform: scale(1.5);
+            }
     }
 
 

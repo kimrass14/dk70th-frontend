@@ -11,7 +11,7 @@ const BirthdayWishes = (props) => {
                 return(
                     <>
                         {element.gsx$picture.$t != "" ? 
-                        <div className="tile-with-pic wish" key={index}>
+                        <div className="tile-with-pic wish-with-pic" key={index}>
                             <div className="message-div">
                                 <p className="message">{element.gsx$message.$t}</p>
                                 <p className="name">{element.gsx$name.$t}</p>
@@ -29,7 +29,7 @@ const BirthdayWishes = (props) => {
 
     return(
         <div className="wishes section">
-            <h2>BirthdayWishes</h2>
+            <h2>Birthday Wishes</h2>
             <div className="tile-container">{message}</div>        
         </div>
     )
