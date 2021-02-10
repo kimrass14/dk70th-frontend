@@ -10,6 +10,10 @@ import ForYou from './Components/ForYou/ForYou'
 // import './App.scss'
 import './_style.scss';
 
+// import config from 'react-reveal/globals'
+// config({ ssrFadeout: true });
+
+
 function App() {
 
   const [messages, setMessages] = useState()
