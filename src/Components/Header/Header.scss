@@ -5,6 +5,8 @@ header {
     height: 50px;
     width: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 0px 25px;
     position: fixed;
     top: 0;
@@ -19,5 +21,9 @@ header {
         &:hover {
             color: black;
         }
+    }
+    .audio {
+        width: 250px;
+        height: 20px;
     }
 }
