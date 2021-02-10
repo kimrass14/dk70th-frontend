@@ -22,8 +22,29 @@ header {
             color: black;
         }
     }
-    .audio {
-        width: 250px;
-        height: 20px;
+    .rhap_container {
+        width: 200px;
+        padding: 0px;
+        background-color: $purple;
+
+        .rhap_additional-controls {
+        display: none;
+        }
+        .rhap_progress-section {
+            display: none;
+        }
+        .rhap_main-controls-button {
+            color: black;
+        }
+        .rhap_volume-controls {
+            justify-content: center;
+            .rhap_volume-button {
+                color: black;
+            }
+            .rhap_volume-indicator {
+                background: black;
+            }
+        }
     }
+    
 }

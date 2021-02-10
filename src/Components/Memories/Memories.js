@@ -12,7 +12,7 @@ const Memories = (props) => {
         .map((element, index) => {
             return(
                 <>
-                        {element.gsx$picture.$t != "" ? 
+                        {element.gsx$picture.$t !== "" ? 
                         <Fade right>
                             <div className="tile-with-pic memory-with-pic" key={index}>
                                 <div className="message-div">
