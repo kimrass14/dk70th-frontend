@@ -14,22 +14,30 @@
         top: 0;
         text-align: center;
 
-        h1 {
-            color: white;
+        .happy-bday {
+            font-family: $message-font;
+            color: $green;
+            font-size: 30px;
             width: 50%;
             height: 100%;
             float: right;
             margin: 0;
-            @include centerInDiv()
+            // @include centerInDiv();
+            padding-top: 100px;
+            display: block;
         }
         .btn-container {
-            width: 100%;
+            width: 50%;
             position: absolute;
-            bottom: 50px;
+            bottom: 100px;
+            right: 0px;
         }
-        button {
-            position: absolute;
-            bottom: 0;
+        // button {
+        //     position: absolute;
+        //     bottom: 0;
+        // }
+        a {
+            color: white;
         }
     }
 }

@@ -11,7 +11,7 @@ const Appreciations = (props) => {
             .map((element, index) => {
                 return(
                     <>
-                        {element.gsx$picture.$t != "" ? 
+                        {element.gsx$picture.$t !== "" ? 
                         <Fade right>
                             <div className="tile-with-pic appreciate-with-pic" key={index}>
                                 <div className="message-div">
