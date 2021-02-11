@@ -14,7 +14,7 @@ const Memories = (props) => {
                 <>
                         {element.gsx$picture.$t !== "" ? 
                         <Fade right>
-                            <div className="tile-with-pic memory-with-pic" key={index}>
+                            <div className={element.gsx$size.$t === "extra-large" ? "tile-with-horizontal-pic memory-with-pic" : "tile-with-pic memory-with-pic"} key={index}>
                                 <div className="message-div">
                                     <p className="message">{element.gsx$message.$t}</p>
                                     <p className="name">{element.gsx$name.$t}</p>
@@ -23,7 +23,7 @@ const Memories = (props) => {
                             </div>
                         </Fade> : 
                         <Fade right>
-                            <div className="tile memory" key={index}>
+                            <div className={element.gsx$size.$t === "large" ? "large tile memory" : "tile memory"} key={index}>
                                 <div className="message">{element.gsx$message.$t}</div>
                                 <div className="name">{element.gsx$name.$t}</div>
                             </div>

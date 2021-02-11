@@ -13,7 +13,7 @@ const Appreciations = (props) => {
                     <>
                         {element.gsx$picture.$t !== "" ? 
                         <Fade right>
-                            <div className="tile-with-pic appreciate-with-pic" key={index}>
+                            <div className={element.gsx$size.$t === "extra-large" ? "tile-with-horizontal-pic appreciate-with-pic" : "tile-with-pic appreciate-with-pic"} key={index}>
                                 <div className="message-div">
                                     <p className="message">{element.gsx$message.$t}</p>
                                     <p className="name">{element.gsx$name.$t}</p>
@@ -22,7 +22,7 @@ const Appreciations = (props) => {
                             </div>
                         </Fade> : 
                         <Fade right>
-                            <div className="tile appreciate" key={index}>
+                            <div className={element.gsx$size.$t === "large" ? "large tile appreciate" : "tile appreciate"} key={index}>
                                 <div className="message">{element.gsx$message.$t}</div>
                                 <div className="name">{element.gsx$name.$t}</div>
                             </div>
