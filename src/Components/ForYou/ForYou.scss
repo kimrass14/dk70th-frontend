@@ -5,10 +5,12 @@
     // height: 100%;
     h2 {
         @include sectionTitle($green);
+        margin: 20px 0px;
     }
     p{
         font-family: $nav-font;
         font-size: 20px;
+        margin: 10px 0px;
     }
     .role {
         font-family: $name-font;
@@ -17,5 +19,18 @@
        text-align: center;
        font-size: 50px;
        color: $purple;
+   }
+
+   .videos-div {
+       display: flex;
+       justify-content: space-around;
+       align-items: flex-start;
+
+        .elon-vid {
+            width: 300px;
+        }
+        .pittsburgh-vid {
+            width: 400px;
+        }
    }
 }
