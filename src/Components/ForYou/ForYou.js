@@ -22,8 +22,8 @@ const ForYou = () => {
                 <Zoom right cascade><h2 className="love-you">WE LOVE YOU!</h2></Zoom>
             </div>
             <div className="videos-div">
-                <video src={elonVideo} controls className="elon-vid">Your browser does not support this video. Please switch to a different browser</video>
-                <video src={pittsburghVideo} controls className="pittsburgh-vid">Your browser does not support this video. Please switch to a different browser</video>
+                <video src={elonVideo} controls controlsList="nodownload" disablePictureInPicture className="elon-vid">Your browser does not support this video. Please switch to a different browser</video>
+                <video src={pittsburghVideo} controls controlsList="nodownload" disablePictureInPicture className="pittsburgh-vid">Your browser does not support this video. Please switch to a different browser</video>
 
                 {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/amJlPz4T0sA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
 

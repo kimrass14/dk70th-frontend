@@ -7,6 +7,7 @@ import BirthdayWishes from './Components/BirthdayWishes/BirthdayWishes'
 import Memories from './Components/Memories/Memories'
 import Appreciations from './Components/Appreciations/Appreciations'
 import ForYou from './Components/ForYou/ForYou'
+import Donna from './Components/Donna/Donna'
 // import './App.scss'
 import './_style.scss';
 
@@ -62,6 +63,12 @@ function App() {
         <div className="page">
           <NavBar />
           <Appreciations messages={messages}/>
+        </div>
+      </Route>
+      <Route path="/donna">
+        <div className="page">
+          <NavBar />
+          <Donna messages={messages}/>
         </div>
       </Route>
     </Router>
