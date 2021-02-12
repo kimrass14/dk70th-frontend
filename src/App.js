@@ -8,6 +8,8 @@ import Memories from './Components/Memories/Memories'
 import Appreciations from './Components/Appreciations/Appreciations'
 import ForYou from './Components/ForYou/ForYou'
 import Donna from './Components/Donna/Donna'
+import Kosudas from './Components/Kosudas/Kosudas'
+import PhotoAlbum from './Components/PhotoAlbum/PhotoAlbum'
 // import './App.scss'
 import './_style.scss';
 
@@ -69,6 +71,18 @@ function App() {
         <div className="page">
           <NavBar />
           <Donna messages={messages}/>
+        </div>
+      </Route>
+      <Route path="/kosudas">
+        <div className="page">
+          <NavBar />
+          <Kosudas messages={messages}/>
+        </div>
+      </Route>
+      <Route path="/photoalbum">
+        <div className="page">
+          <NavBar />
+          <PhotoAlbum messages={messages}/>
         </div>
       </Route>
     </Router>

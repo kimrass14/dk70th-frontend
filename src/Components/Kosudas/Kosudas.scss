@@ -1,0 +1,12 @@
+@import '../../style';
+
+.kosudas {
+    width: $section-width;
+    h2 {
+        @include sectionTitle($dark-purple);
+    }
+    
+    .kosuda {
+        @include tileBorder($dark-purple)
+    }
+}

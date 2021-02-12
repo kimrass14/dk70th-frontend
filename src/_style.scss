@@ -48,7 +48,7 @@ $nav-font: 'Lato', sans-serif;
 .tile-container {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); //minmax not compatible with IE
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); //minmax not compatible with IE
     grid-auto-rows: min-content;
     grid-auto-flow: dense;
     // z-index: -1;
