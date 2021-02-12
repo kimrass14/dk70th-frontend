@@ -10,6 +10,7 @@ const NavBar = () => {
             <Link to="/birthdaywishes" className="link">Birthday Wishes</Link>
             <Link to="/memories" className="link">Memories</Link>
             <Link to="/appreciations" className="link">Appreciations</Link>
+            <Link to="/donna" className="link">From Donna</Link>
         </div>
     )
 }
