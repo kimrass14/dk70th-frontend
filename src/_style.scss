@@ -7,8 +7,6 @@ $grey: #EBEBEB;
 
 $section-width: 80%;
 $nav-width: 220px;
-// $span-2: span 2;
-// $span-3: span 3;
 
 $name-font: 'Oswald', sans-serif;
 $message-font: 'Raleway', sans-serif;
@@ -81,7 +79,6 @@ $nav-font: 'Lato', sans-serif;
     border: solid black;
     background-color: black;
     z-index: 1;
-
     .message-div {
         background-color: black;
         padding: 10px;
@@ -89,32 +86,24 @@ $nav-font: 'Lato', sans-serif;
         font-family: $message-font;
         font-weight: 500;
         z-index: 1;
-
-
         p {
             white-space: pre-wrap;
             margin: 0px;
-            // text-align: right;
             color: white;
             font-family: $message-font;
         }
         .name {
             width: fit-content;
             border-top: solid white 1px;
-            
             padding: 10px;
             margin-top: 10px;
             font-size: 20px;
-            // float: right;
             font-family: $name-font;
             text-transform: uppercase;
-            
-
         }
         
     }
     img {
-        // @include centerInDiv();    
         width: 300px;
             max-height: 250px;
             object-fit: cover;
@@ -127,9 +116,7 @@ $nav-font: 'Lato', sans-serif;
 }
 .tile-with-horizontal-pic {
     @include tileWithPic(span 3);
-    // grid-column: span 3;
 }
 .tile-with-pic {
     @include tileWithPic(span 2);
-    // grid-column: span 2;
 }

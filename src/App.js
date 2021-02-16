@@ -10,11 +10,7 @@ import ForYou from './Components/ForYou/ForYou'
 import Donna from './Components/Donna/Donna'
 import Kosudas from './Components/Kosudas/Kosudas'
 import PhotoAlbum from './Components/PhotoAlbum/PhotoAlbum'
-// import './App.scss'
 import './_style.scss';
-
-// import config from 'react-reveal/globals'
-// config({ ssrFadeout: true });
 
 
 function App() {

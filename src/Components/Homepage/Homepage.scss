@@ -2,7 +2,6 @@
 
 .homepage {
     position: relative;
-    // height: 100%;
 
     img {
         width: 50%;
@@ -24,7 +23,6 @@
             height: 100%;
             float: right;
             margin: 0;
-            // @include centerInDiv();
             padding-top: 100px;
             display: block;
         }
@@ -34,10 +32,6 @@
             top: 400px;
             right: 0px;
         }
-        // button {
-        //     position: absolute;
-        //     bottom: 0;
-        // }
         a {
             color: white;
         }
