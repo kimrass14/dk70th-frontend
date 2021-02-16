@@ -5,7 +5,8 @@ import './BirthdayWishes.scss'
 const BirthdayWishes = (props) => {
 
     let message = ''
-    if(props.messages.feed.entry[0]) {
+    // if(props.messages.feed.entry[0]) {
+    if(props) {
         message = props.messages.feed.entry.filter(message => {return message.gsx$type.$t === "Birthday wishes"})
             .map((element, index) => {
                 return(
