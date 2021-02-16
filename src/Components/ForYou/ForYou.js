@@ -11,14 +11,14 @@ const ForYou = () => {
         <div className="forYou section">
             <div>
                 <h2>To the....</h2>
-                <p><span className="role">WIFE</span> so devoted she finally got her husband to eat and love cheesecake</p>
+                <p><span className="role">WIFE</span> so devoted and undoubtedly the yin to Steve's yang</p>
                 <p><span className="role">MOTHER</span> that leads by example with the fullest of hearts</p>
                 <p><span className="role">SISTER</span> that stands unwavering at their side</p>
-                <p><span className="role">DAUGHTER</span> that cooks like her mother and creates with her hands like her father</p>
+                <p><span className="role">DAUGHTER</span> that cooks like her mother and creative like her father</p>
                 <p><span className="role">AUNT</span> with the greatest admiration of her nieces and nephews</p>
-                <p><span className="role">GRANDMA</span> that teaches (literally) curriculum and compassion</p>
+                <p><span className="role">GRANDMA</span> that teaches curriculum and compassion</p>
                 <p><span className="role">FRIEND</span> that exemplifies the truest definition of the word</p>
-                <p><span className="role">TEACHER</span> so impressionable she continues to inspire students she taught decades ago</p> 
+                <p><span className="role">TEACHER</span> so impressionable she still inspires students she taught decades ago</p> 
                 <p>and <span className="role">EVERYTHING</span> else in between that you are</p>
                 <Zoom right cascade><h2 className="love-you">WE LOVE YOU!</h2></Zoom>
             </div>

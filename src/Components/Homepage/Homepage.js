@@ -3,7 +3,7 @@ import Bounce from 'react-reveal/Bounce'
 import {Link} from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
-import diane from './diane.jpg'
+import diane from './diane-v2.jpg'
 import './Homepage.scss'
 
 const Homepage = () => {
