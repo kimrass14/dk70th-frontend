@@ -48,7 +48,7 @@ $nav-font: 'Lato', sans-serif;
 .tile-container {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); //minmax not compatible with IE
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); //minmax not compatible with IE
     grid-auto-rows: min-content;
     grid-auto-flow: dense;
     // z-index: -1;
@@ -77,8 +77,10 @@ $nav-font: 'Lato', sans-serif;
 @mixin tileWithPic($column-span) {
     grid-column: $column-span;
     display: flex;
+    justify-content: space-between;
     border: solid black;
     background-color: black;
+    z-index: 1;
 
     .message-div {
         background-color: black;
@@ -86,6 +88,7 @@ $nav-font: 'Lato', sans-serif;
         max-width: 60%;
         font-family: $message-font;
         font-weight: 500;
+        z-index: 1;
 
 
         p {
@@ -111,13 +114,14 @@ $nav-font: 'Lato', sans-serif;
         
     }
     img {
-            width: 300px;
+        // @include centerInDiv();    
+        width: 300px;
             max-height: 250px;
             object-fit: cover;
             z-index: 2;
             &:hover {
                 transform: scale(1.5);
-                z-index: 2;
+                // z-index: 3;
             }
     }
 }
