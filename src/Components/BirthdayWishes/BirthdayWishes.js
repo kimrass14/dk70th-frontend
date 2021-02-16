@@ -3,7 +3,6 @@ import Fade from 'react-reveal/Fade'
 import './BirthdayWishes.scss'
 
 const BirthdayWishes = (props) => {
-    // const entries = props.messages.feed.entry
 
     let message = ''
     if(props.messages.feed.entry[0]) {

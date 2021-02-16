@@ -1,5 +1,4 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade'
 import './Donna.scss'
 
 const Donna = () => {
@@ -56,8 +55,6 @@ const Donna = () => {
                 
                 <p>It has been a wonderful journey thus far and I'm glad we have been on it together! Wishing you a very Happy Birthday!</p>
                 <p className="love-donna">Love, Donna </p>
-                {/* <img src="https://drive.google.com/thumbnail?id=10yLGWdCd_JIbniJVGr-Kd0G-ogYyGdmr" alt="" /> */}
-
             </div>
         </div>
     )
