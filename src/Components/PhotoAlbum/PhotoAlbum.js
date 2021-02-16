@@ -24,7 +24,7 @@ const PhotoAlbum = (props) => {
     return(
         <div className="photo-album section">
             <h2 className="photo-album">More photos</h2>
-            <div className="tile-container">{message}</div>
+            <div className="photo-container">{message}</div>
         </div>
     )
 }

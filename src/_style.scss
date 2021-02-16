@@ -105,13 +105,13 @@ $nav-font: 'Lato', sans-serif;
     }
     img {
         width: 300px;
-            max-height: 250px;
-            object-fit: cover;
-            z-index: 2;
-            &:hover {
-                transform: scale(1.5);
-                // z-index: 3;
-            }
+        max-height: 250px;
+        object-fit: cover;
+        z-index: 2;
+        &:hover {
+            transform: scale(1.5);
+            // z-index: 3;
+        }
     }
 }
 .tile-with-horizontal-pic {

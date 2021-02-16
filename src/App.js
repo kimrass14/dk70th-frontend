@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {BrowserRouter as Router, Route} from "react-router-dom";
+// import {BrowserRouter as Router, Route} from "react-router-dom";
+import {HashRouter as Router, Route} from 'react-router-dom'
 import Header from './Components/Header/Header'
 import NavBar from './Components/NavBar/NavBar'
 import Homepage from './Components/Homepage/Homepage'
