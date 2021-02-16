@@ -111,7 +111,8 @@ $nav-font: 'Lato', sans-serif;
         
     }
     img {
-            width: 300px;
+        // @include centerInDiv();    
+        width: 300px;
             max-height: 250px;
             object-fit: cover;
             z-index: 2;

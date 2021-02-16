@@ -1,9 +1,9 @@
 import React from 'react'
 import Zoom from 'react-reveal/Zoom'
 import './ForYou.scss'
-import elonVideo from './from-elon.mp4'
 import pittsburghVideo from './from-pittsburgh.mp4'
 import adyAndHazelVideo from './from-ady-hazel.mp4'
+
 
 const ForYou = () => {
 
@@ -23,7 +23,6 @@ const ForYou = () => {
                 <Zoom right cascade><h2 className="love-you">WE LOVE YOU!</h2></Zoom>
             </div>
             <div className="videos-div">
-                <video src={elonVideo} controls controlsList="nodownload" disablePictureInPicture className="elon-vid">Your browser does not support this video. Please switch to a different browser</video>
                 <video src={pittsburghVideo} controls controlsList="nodownload" disablePictureInPicture className="pittsburgh-vid">Your browser does not support this video. Please switch to a different browser</video>
                 <video src={adyAndHazelVideo} controls controlsList="nodownload" disablePictureInPicture className="adyHazel-vid">Your browser does not support this video. Please switch to a different browser</video>
 

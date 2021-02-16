@@ -1,6 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import './Kosudas.scss'
+import elonVideo from './from-elon.mp4'
+import mikAndEmmaVideo from './from-mik-emma.mp4'
 
 const Kosudas = (props) => {
 
@@ -38,6 +40,10 @@ const Kosudas = (props) => {
     return(
         <div className="kosudas section">
             <h2 className="kosudas">From Kosuda Family</h2>
+            <div className="videos-div">
+                <video src={elonVideo} controls controlsList="nodownload" disablePictureInPicture className="vid">Your browser does not support this video. Please switch to a different browser</video>
+                <video src={mikAndEmmaVideo} controls controlsList="nodownload" disablePictureInPicture className="vid">Your browser does not support this video. Please switch to a different browser</video>
+            </div>
             <div className="tile-container">{message}</div>
         </div>
     )
