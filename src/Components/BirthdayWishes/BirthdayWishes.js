@@ -5,9 +5,9 @@ import './BirthdayWishes.scss'
 const BirthdayWishes = (props) => {
 
     let message = ''
-    // if(props.messages.feed.entry[0]) {
-    if(props) {
-        message = props.messages.feed.entry.filter(message => {return message.gsx$type.$t === "Birthday wishes"})
+    if(props.messages.feed.entry && props.messages.feed.entry.length > 0) {
+        // const message = () => {
+            message = props.messages.feed.entry.filter(message => {return message.gsx$type.$t === "Birthday wishes"})
             .map((element, index) => {
                 return(
                     <>
@@ -30,13 +30,19 @@ const BirthdayWishes = (props) => {
                     </>
                 )
             })
+    } else {
+        const noMessages = "loading messages..."
     }
+
+    
 
     return(
         <div className="wishes section">
             <h2>Birthday Wishes</h2>
-            
-                <div className="tile-container">{message}</div>
+            <div className="tile-container">
+                {/* {props.messages.feed.entry && props.messages.feed.entry.length > 0 ? message() : noMessages} */}
+                {message}
+            </div>
                     
         </div>
     )
